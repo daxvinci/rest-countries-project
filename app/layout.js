@@ -1,23 +1,22 @@
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import ThemeContext from "@/components/ThemeContext";
 import Head from "next/head";
 import { Nunito_Sans } from 'next/font/google';
 // import ThemeContext from "../components/ThemeContext"
 
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+// const geistSans = localFont({
+//   src: "./fonts/GeistVF.woff",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
+// const geistMono = localFont({
+//   src: "./fonts/GeistMonoVF.woff",
+//   variable: "--font-geist-mono",
+//   weight: "100 900",
+// });
 
 const nunitoSans = Nunito_Sans({
   subsets: ['latin'], // Specify the subsets
@@ -42,7 +41,6 @@ export default function RootLayout({ children }) {
         < ThemeContext>
           < Navbar />
           {children}
-          < Footer />
         </ThemeContext>
       </body>
     </html>
