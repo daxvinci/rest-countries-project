@@ -51,7 +51,7 @@ export default function Country() {
         <div className="card flex flex-col sm:flex-row sm:justify-between gap-3 w-full ">
           <div className="img-container h-[250px] sm:h-[350px] sm:w-[43%] ">
             < Image
-              src = {country.flags.png}
+              src = {country.flags.svg}
               alt="country image"
               height={300}
               width={300}
