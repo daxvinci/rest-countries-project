@@ -8,7 +8,7 @@ export default function Card({country}) {
     <Link href={`/country/${country.cca3}`} className={`card flex flex-col shadow-xl rounded-lg overflow-hidden w-full h-[350px] ${isLight ? "bg-[#FFFFFF] text-[#111517]" : "bg-[#2B3945] text-[#FFFFFF]"}`}>
       <div className="img-container w-full h-1/2">
         < Image
-          src = {country.flags.png}
+          src = {country.flags.svg}
           alt="country image"
           height={300}
           width={300}
